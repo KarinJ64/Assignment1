@@ -1,42 +1,64 @@
 /* main formating */
+
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-	width: 90%;
+
 	max-width: 1920px;
-	margin: 30px auto;
+	margin: 20px auto;
 	background-color: #fff;
 	color: black;
 	font-family: Verdana, sans-serif;
-	padding-top:50px;
+	font-size:80%;
 }
- html {
-	 scroll-padding-top: 70px;
- }
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  font-size: 1.875em;
+}
+
+h3 {
+	font-size:1.35em;
+}
+
+p {
+  font-size: 1em;
+  max-width:120ch;
+}
+
+nav {
+	clear: left;
+}
+
+html {
+
+    color-scheme: light dark;
+
+}
 
 /* format the main navigation menu */
 
 #main_nav {
-  position: fixed;
-  top:0;
-  width:90%;
+  display: flex;
   margin: 0;
-  padding:0 2px 0;
+  padding:0.1em 0;
   background-color: #385D8A;
-
-  
-
-
 }
 
 #main_nav li {
-  
 	list-style-type: none;
 	text-align: center;
-
-
 }
 
+
 #main_nav a {
-	display:block;
+	display:block;	
 	float:left;
 	margin: 1em;
 	padding: 0.2em;
@@ -44,9 +66,8 @@ body {
 	border-radius:5px;
 	text-decoration:none;
 	color:black;
+	font-size:1.2em;
 	background-color:white;
-
-
 }
 
 #social {
@@ -60,7 +81,20 @@ body {
 	color:white;
 }
 
+/* Use responsive design to change appearance for smaller screens */
+@media all and (max-width: 600px) {
+  
+	#main_nav {
+		flex-direction: column;
+	}
+}
+
 /*format the table */
+
+caption {
+	font-size:1.2em;
+	
+}
 .tabell1 {
 	width:80%;
 	border-collapse:collapse;
@@ -79,26 +113,14 @@ table, th, td {
 }
 
 
-/* format the 3*3 picture grid */
+/* format the pictures */
+div.gallery {
+  display:inline-block;
+}
 
-.grid3x3 {
-	width:300px;
-	height:300px;
-	clear:both;
-}
-.grid3x3>div{
- width:100px;
- height:100px;
- float:left;
- line-height:100px;
- text-align:center;    
-}
-.grid3x3>div>img{
- display:inline-block;
- vertical-align:middle;
- max-width:80%;
- max-height:80%;
-}
+
+
+/*fornat some columns at the end of the page */
 
 .2columns {
 	margin:15px;

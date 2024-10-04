@@ -8,7 +8,7 @@
 body {
 
 	max-width: 1920px;
-	margin: 20px auto;
+	margin: 20px 20px;
 	background-color: #fff;
 	color: black;
 	font-family: Verdana, sans-serif;
@@ -120,35 +120,24 @@ div.gallery {
 
 
 
-/*fornat some columns at the end of the page */
+/*fornat some columns at the end of the page. I changed here to grid layout after feedback on Oct4 */
 
-.2columns {
-	margin:15px;
-	background-color:red;
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+
 }
 
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+.column1 {
+		background-color:#8CBFE8;
+		padding: 20px;
 }
 
-.column {
-  display: flex;
-  flex-direction: column;
-  flex-basis: 100%;
-  flex: 1;
+.column2 {
+		background-color:#B4C1A5;
+		padding: 20px;
 }
 
-.bluecolumn {
-	background-color:#8CBFE8;
-}
-
-.greencolumn {
-	background-color:#B4C1A5;
-}
 /*format the input fields when hovering over them */
 input[type=text]:hover{
 	background:#edc2d1;
